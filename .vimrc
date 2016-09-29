@@ -18,17 +18,41 @@ set novisualbell
 syntax enable 
 colorscheme desert
 
-set tabstop=4
-set shiftwidth=4
+set smartindent
+set autoindent
+set cindent
+set shiftwidth=2
+set tabstop=2
+set expandtab
+set smartcase
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Parenthesis/bracket
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+":inoremap ( ()<left>
+":inoremap (( (
+":inoremap {{ {
+":inoremap [ []<left>
+:inoremap {<CR> {<CR>  <CR>}<up><right>
+
 
 " to open the mac_vim in a bigger box with big enough font
 if has("gui_macvim")
-    set lines=9999 columns=9999
+    set lines=99 columns=99
 	set guifont=Menlo\ Regular:h15
 endif
 
 " better search experience
 set incsearch
 set hlsearch
+
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+" Remember info about open buffers on close
+set viminfo^=%
+
 
 execute pathogen#infect()
