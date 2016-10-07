@@ -1,0 +1,3 @@
+set runtimepath+=~/git/VIM/.vim
+source ~/git/VIM/.vimrc
+source ~/git/VIM/plugin_config.vim
