@@ -1,18 +1,17 @@
-" Syntastic plugin : https://github.com/scrooloose/syntastic#requirements 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" Syntastic plugin : https://github.com/scrooloose/syntastic#requirements
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_java_javac_classpath = ".:/Users/danish/git/11-711/code1/*.jar"
-
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_java_javac_classpath = ".:/Users/danish/git/11-711/code1/*.jar"
 
 
 " vim airline : https://github.com/vim-airline/vim-airline
-" tab lines 
+" tab lines
 " let g:airline#extensions#tabline#left_sep = ' '
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#left_alt_sep = '|'
