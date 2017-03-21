@@ -23,13 +23,16 @@ set laststatus=2
 nnoremap <D-O> :NERDTree<CR>
 
 " solarized
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 syntax enable
+set t_Co=256
 if has('gui_running')
-    set background=light
-    colorscheme solarized
+    set background=dark
+    colorscheme PaperColor
     else
-        set background=light
-        colorscheme solarized
+        set background=dark
+        colorscheme PaperColor
         endif
 " colorscheme solarized
+
+let python_highlight_all = 1
