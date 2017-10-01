@@ -1,4 +1,4 @@
-" Syntastic plugin : https://github.com/scrooloose/syntastic#requirements
+"Syntastic plugin : https://github.com/scrooloose/syntastic#requirements
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
@@ -7,7 +7,6 @@
 " let g:syntastic_auto_loc_list = 1
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
-" let g:syntastic_java_javac_classpath = ".:/Users/danish/git/11-711/code1/*.jar"
 
 
 " vim airline : https://github.com/vim-airline/vim-airline
@@ -28,10 +27,10 @@ syntax enable
 set t_Co=256
 if has('gui_running')
     set background=dark
-    colorscheme PaperColor
+    colorscheme monokai
     else
         set background=dark
-        colorscheme PaperColor
+        colorscheme monokai
         endif
 " colorscheme solarized
 
