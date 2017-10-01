@@ -18,11 +18,10 @@ let g:airline_enable_branch = 1
 let g:airline_enable_syntastic = 1
 set laststatus=2
 
-" nerd tree
-nnoremap <D-O> :NERDTree<CR>
 
-" solarized
-" let g:solarized_termcolors=256
+
+" monokai
+" let g:monokai_termcolors=256
 syntax enable
 set t_Co=256
 if has('gui_running')
@@ -30,8 +29,8 @@ if has('gui_running')
     colorscheme monokai
     else
         set background=dark
-        colorscheme monokai
+        colorscheme gruvbox
         endif
-" colorscheme solarized
+" colorscheme monokai
 
 let python_highlight_all = 1
