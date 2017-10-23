@@ -18,8 +18,7 @@ let g:airline_enable_branch = 1
 let g:airline_enable_syntastic = 1
 set laststatus=2
 
-
-
+let g:gruvbox_contrast_dark='hard'
 " monokai
 " let g:monokai_termcolors=256
 syntax enable
