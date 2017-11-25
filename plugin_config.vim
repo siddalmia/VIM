@@ -24,11 +24,11 @@ let g:gruvbox_contrast_dark='hard'
 syntax enable
 set t_Co=256
 if has('gui_running')
-    set background=dark
-    colorscheme monokai
+    set background=light
+    colorscheme paperColor 
     else
-        set background=dark
-        colorscheme gruvbox
+        set background=light
+        colorscheme paperColor
         endif
 " colorscheme monokai
 
