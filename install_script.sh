@@ -8,3 +8,8 @@ git clone https://github.com/scrooloose/nerdtree
 git clone https://github.com/NLKNguyen/papercolor-theme.git
 git clone https://github.com/vim-syntastic/syntastic.git
 git clone https://github.com/morhetz/gruvbox.git
+
+# install YouCompleteMe
+cd YouCompleteMe
+git submodule update --init --recursive
+python3 install.py

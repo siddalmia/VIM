@@ -16,6 +16,10 @@
 " let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_enable_branch = 1
 let g:airline_enable_syntastic = 1
+
+" YouCompleteMe closes after complettion
+let g:ycm_autoclose_preview_window_after_completion = 1
+
 set laststatus=2
 
 let g:gruvbox_contrast_dark='hard'
@@ -24,12 +28,15 @@ let g:gruvbox_contrast_dark='hard'
 syntax enable
 set t_Co=256
 if has('gui_running')
-    set background=light
-    colorscheme paperColor 
+    set background=dark
+    colorscheme paperColor
     else
-        set background=light
+        set background=dark
         colorscheme paperColor
         endif
 " colorscheme monokai
 
 let python_highlight_all = 1
+set tabstop=4
+set shiftwidth=4
+set number relativenumber
