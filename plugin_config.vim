@@ -29,10 +29,10 @@ syntax enable
 set t_Co=256
 if has('gui_running')
     set background=dark
-    colorscheme paperColor
+    colorscheme PaperColor
     else
         set background=dark
-        colorscheme paperColor
+        colorscheme PaperColor
         endif
 " colorscheme monokai
 
