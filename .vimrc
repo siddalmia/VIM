@@ -19,8 +19,8 @@ syntax enable
 set smartindent
 set autoindent
 set cindent
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set expandtab
 set smartcase
 
@@ -32,7 +32,14 @@ set smartcase
 ":inoremap {{ {
 ":inoremap [ []<left>
 :inoremap {<CR> {<CR>  <CR>}<up><right>
+:imap jk <Esc>
 
+"""" Disable Arrow Keys """""
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+"""" Can be enabled once comfortable """
 
 " to open the mac_vim in a bigger box with big enough font
 if has("gui_macvim")
