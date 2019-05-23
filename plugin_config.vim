@@ -37,6 +37,3 @@ if has('gui_running')
 " colorscheme monokai
 
 let python_highlight_all = 1
-set tabstop=4
-set shiftwidth=4
-set number relativenumber
